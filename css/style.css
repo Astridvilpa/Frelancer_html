@@ -27,3 +27,20 @@ body {
 .titulo span {
   font-size: 2rem;
 }
+
+.contenedor {
+  width: 120rem;
+  /* margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;  esto se puede simplificar y hacerlo tal como las manillas del reloj */
+  margin: 0 auto; 
+}
+
+.nav-bg{
+background-color: var(--secundario);
+}
+
+.navegacion-principal{
+  
+}
