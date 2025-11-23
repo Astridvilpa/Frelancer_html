@@ -20,7 +20,7 @@ body {
 .titulo {
   text-align: center;
   font-size: var(--fuente-principal);
-  color: var(--primario);
+  /* color: var(--primario); */
   
 }
 
@@ -42,7 +42,6 @@ background-color: var(--secundario);
 }
 
 .navegacion-principal{
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between; /*separaciones horizointal*/
@@ -51,4 +50,12 @@ background-color: var(--secundario);
 .navegacion-principal a {
   color: var(--blanco);
   text-decoration: none; /*esto es para quitar el subrayado en la nav*/
+  font-size: 2rem;
+  font-weight: bold; /* o 700 es lo mismo es para que este en negrita*/
+   padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario); /*para cuando se pase por la barra cambie el color*/
+  color: var(--oscuro);
 }
