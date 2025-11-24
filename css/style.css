@@ -1,11 +1,11 @@
 :root {
---blanco:#ffffff;
---oscuro: #212121;
---primario:#ffc107;
---secundario:#0097a7;
---gris:#757575;
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
 
---fuente-principal: 3.8rem;
+  --fuente-principal: 3.8rem;
 }
 
 html {
@@ -21,7 +21,6 @@ body {
   text-align: center;
   font-size: var(--fuente-principal);
   /* color: var(--primario); */
-  
 }
 
 .titulo span {
@@ -29,46 +28,53 @@ body {
 }
 
 .contenedor {
-  width: 120rem;
+  max-width: 120rem;
   /* margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;  esto se puede simplificar y hacerlo tal como las manillas del reloj */
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-.nav-bg{
-background-color: var(--secundario);
+.nav-bg {
+  background-color: var(--secundario);
 }
 
-.navegacion-principal{
+.navegacion-principal {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; /*separaciones horizointal*/
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between; /*separaciones horizointal*/
+  }
 }
 
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   color: var(--blanco);
   text-decoration: none; /*esto es para quitar el subrayado en la nav*/
   font-size: 2rem;
   font-weight: bold; /* o 700 es lo mismo es para que este en negrita*/
-   padding: 1rem;
+  padding: 1rem;
 }
 
 .navegacion-principal a:hover {
-  background-color: var(--primario); /*para cuando se pase por la barra cambie el color*/
+  background-color: var(
+    --primario
+  ); /*para cuando se pase por la barra cambie el color*/
   color: var(--oscuro);
 }
 
-
 @media (min-width: 480px) {
-  h1{
-
+  h1 {
   }
 }
 
-@media (min-width: 780px){
-  h1{
-    
+@media (min-width: 780px) {
+  h1 {
   }
 }
