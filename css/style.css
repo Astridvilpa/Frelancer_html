@@ -78,3 +78,9 @@ body {
   h1 {
   }
 }
+
+.hero {
+  background-image:url(../img/hero.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
