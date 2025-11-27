@@ -10,6 +10,10 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box; /* esto ayuda a que no me afecte el tamaño con el padding*/
+}
+*, *:before, *:after {
+box-sizing: inherit;
 }
 
 body {
@@ -83,4 +87,6 @@ body {
   background-image:url(../img/hero.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 410px;
+  padding: 20px;
 }
