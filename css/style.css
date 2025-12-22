@@ -76,6 +76,15 @@ width: auto;
   }
 }
 
+.sombra {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+-moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+background-color: var(--blanco) ;
+padding: 2rem;
+border-radius: 1rem;
+}
+
 .nav-bg {
   background-color: var(--secundario);
 }
@@ -125,6 +134,7 @@ width: auto;
   background-size: cover;
   height: 410px;
   position: relative; /* el padre siempre debe ser relative para que el hijo sea absolute */
+  margin-bottom: 2rem;
 }
 .contenido-hero {
   position: absolute;
